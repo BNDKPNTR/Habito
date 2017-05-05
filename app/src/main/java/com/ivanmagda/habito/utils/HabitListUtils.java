@@ -10,6 +10,8 @@ public final class HabitListUtils {
 
     public static List<Habit> CreateHabitListFromDataSnapshot(DataSnapshot dataSnapshot)
     {
+        if(dataSnapshot == null)
+            return new ArrayList<Habit>();
 
         List<Habit> habits = new ArrayList<>((int) dataSnapshot.getChildrenCount());
         for (DataSnapshot data : dataSnapshot.getChildren()) {

@@ -1,5 +1,4 @@
 package com.ivanmagda.habito;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,6 +11,8 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void AdditionIsCorrect() throws Exception {
+
         assertEquals(4, 2 + 2);
     }
+
 }
